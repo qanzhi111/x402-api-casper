@@ -1,0 +1,12 @@
+[package]
+name = "x402-api-logger"
+version = "1.0.0"
+edition = "2021"
+description = "Casper x402 API Usage Logger - On-chain payment recording for AI agent API"
+
+[dependencies]
+odra = { version = "0.8", features = ["casper"] }
+
+[profile.release]
+opt-level = 3
+lto = true

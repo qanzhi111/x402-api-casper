@@ -1,0 +1,34 @@
+{
+  "name": "x402-crypto-api-casper",
+  "version": "1.0.0",
+  "description": "Casper Network x402 Crypto API - AI Agent payments in CSPR/CEP-18 tokens on Casper Testnet",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "mcp": "node mcp-server.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "x402",
+    "casper",
+    "blockchain",
+    "crypto",
+    "api",
+    "mcp",
+    "ai-agents",
+    "web3"
+  ],
+  "author": "onchain-shadow",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
