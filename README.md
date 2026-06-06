@@ -4,7 +4,7 @@
 > 
 > Pay for crypto data with CSPR via x402 protocol on Casper Testnet
 > 
-> Built for [Casper Agentic Buildathon 2025](https://dorahacks.io/hackathon/casper-agentic-buildathon) - $150,000 Prize Pool
+> Built for [Casper Agentic Buildathon 2026](https://dorahacks.io/hackathon/2202/detail) - $150,000 Prize Pool
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Network: Casper Testnet](https://img.shields.io/badge/Network-Casper_Testnet-42A5F5)](https://casper.network/)
@@ -66,12 +66,12 @@ This project is submitted for the **x402 Payments + AI Agents** category of the 
 
 | Detail | Value |
 |--------|-------|
-| Hackathon | Casper Agentic Buildathon 2025 |
-| Deadline | June 30, 2025 |
+| Hackathon | Casper Agentic Buildathon 2026 |
+| Deadline | Open submission |
 | Prize Pool | $150,000 |
-| Category | x402 Payments + AI Agents |
+| Category | Agentic AI + x402 Payments |
 | Team | onchain-shadow |
-| GitHub | ktagent2026x |
+| GitHub | qanzhi111 |
 
 ## 🚀 Quick Start
 
@@ -350,6 +350,6 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-**Built for the Casper Agentic Buildathon 2025** 🎯
+**Built for the Casper Agentic Buildathon 2026** 🎯
 
 *AI agents pay per request. No API keys. No subscriptions. Just CSPR.*
