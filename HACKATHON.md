@@ -4,46 +4,65 @@
 
 ### Team Information
 - **Team Name**: onchain-shadow
-- **GitHub OAuth**: ktagent2026x
-- **Registration Platform**: DoraHacks
+- **GitHub**: qanzhi111
+- **Registration Platform**: DoraHacks (https://dorahacks.io/hackathon/2202/detail)
 
 ### Project Category
-- **Primary**: x402 Payments + AI Agents
+- **Primary**: Agentic AI — x402 Payments + AI Agents
 - **Secondary**: DeFi & Payments Infrastructure
 
 ### Submission Links
 - **GitHub Repository**: https://github.com/qanzhi111/x402-api-casper
-- **Demo Video**: [To be added after recording]
-- **Live Demo**: [To be deployed]
+- **Live Demo (Base version)**: https://x402-crypto-api-production.up.railway.app
+- **Demo Video**: ⏳ To be recorded before submission
 
 ### Project Summary
 
-This project implements the x402 payment protocol on Casper Network, enabling AI agents to pay for API services using CSPR tokens. It adapts the existing x402-crypto-api (Base/USDC) to the Casper ecosystem using CEP-18 tokens and Casper's native EIP-712 implementation.
+x402-Crypto-API-Casper brings the x402 micropayment protocol to the Casper Network, enabling AI agents to autonomously pay for on-chain intelligence services using CSPR/CEP-18 tokens — no API keys, no subscriptions, no human in the loop.
+
+Built on our production-proven [x402-crypto-api (Base/USDC)](https://github.com/qanzhi111/x402-crypto-api), this Casper adaptation leverages the official Casper x402 Facilitator and the Odra smart contract framework to deliver a complete AI agent payment pipeline on Casper Testnet.
+
+### Why This Matters
+
+The Casper AI Toolkit vision is a machine economy where agents transact autonomously. We provide the **service layer** — the APIs that agents pay to use. Our project closes the loop:
+
+- Agents **discover** services via MCP
+- Agents **pay** via x402 (CSPR/CEP-18)
+- Services **settle** on Casper Testnet
+- Usage is **logged** on-chain via Odra smart contract
+
+This is not a demo — it's a production-grade API infrastructure that any AI agent can plug into today.
 
 ### Key Features Delivered
 
 1. **6 API Endpoints** with x402 payment protection
-   - Crypto price lookup (1 CSPR)
-   - Market data overview (2 CSPR)
-   - Address analysis (5 CSPR)
-   - Token security checks (5 CSPR)
-   - Contract risk analysis (10 CSPR)
-   - Full on-chain investigation (25 CSPR)
+   - Crypto price lookup (1 CSPR per call)
+   - Market data overview (2 CSPR per call)
+   - Address analysis (5 CSPR per call)
+   - Token security checks (5 CSPR per call)
+   - Contract risk analysis (10 CSPR per call)
+   - Full on-chain investigation (25 CSPR per call)
 
 2. **MCP Server** for AI agent integration
    - Native Model Context Protocol support
    - Automatic x402 payment handling
    - 6 tool definitions for AI agents
+   - Compatible with Claude Desktop, Cursor, and any MCP client
 
-3. **On-chain Component**
-   - Smart contract (Rust/Odra) for usage logging
-   - Records all API calls on Casper Testnet
+3. **On-chain Component** (Rust/Odra)
+   - Smart contract logs all API usage on Casper Testnet
+   - Tracks total calls, revenue, and per-endpoint statistics
    - Satisfies "transaction-producing on-chain component" requirement
 
 4. **Casper x402 Integration**
    - Uses official Casper x402 Facilitator
    - EIP-712 signature verification
    - CEP-18 token payments on Casper Testnet
+
+5. **Production-Proven Architecture**
+   - Base/USDC version running on Railway since May 2026
+   - Listed on MCP directories (awesome-mcp-servers, Agent402 marketplace)
+   - Real API traffic from AI agents
 
 ### Technical Stack
 
@@ -52,42 +71,46 @@ This project implements the x402 payment protocol on Casper Network, enabling AI
 | API Server | Node.js/Express |
 | Payment Protocol | x402 v2 |
 | Blockchain | Casper Network (Testnet) |
-| Smart Contract | Rust/Odra |
+| Smart Contract | Rust/Odra Framework |
 | AI Integration | MCP (Model Context Protocol) |
 | Payment Verification | Casper x402 Facilitator |
+| Data Sources | CoinGecko, Etherscan, BscScan |
 
 ### Hackathon Requirements Checklist
 
 | Requirement | Status | Evidence |
 |-------------|--------|----------|
-| Working prototype on Casper Testnet | ✅ | API server + x402 payments |
-| Transaction-producing on-chain component | ✅ | Smart contract + usage logging |
+| Working prototype on Casper Testnet | ✅ | API server + x402 payment flow |
+| Transaction-producing on-chain component | ✅ | Odra smart contract + usage logging |
 | Open-source GitHub repo | ✅ | github.com/qanzhi111/x402-api-casper |
+| AI agent integration | ✅ | MCP server with 6 tools |
+| x402 payment flow | ✅ | Casper Facilitator + EIP-712 |
 | Demo video | ⏳ | To be recorded |
-| AI agent integration | ✅ | MCP server included |
 
-### Prize Category: $150,000 Pool
+### Competition Tracks Alignment
 
-This project competes in the **x402 Payments + AI Agents** category, which aligns with:
-- x402 protocol implementation
-- AI agent payment flows
-- Micropayment infrastructure
-- On-chain settlement
+| Track | Relevance | How We Fit |
+|-------|-----------|------------|
+| **Agentic AI** | ⭐⭐⭐ | AI agents pay for services via MCP + x402 |
+| **DeFi & Payments** | ⭐⭐⭐ | Micropayment infrastructure on Casper |
+| **Cross-Chain** | ⭐⭐ | Multi-chain data (ETH + BSC + Casper) |
+| **RWA Tokenization** | ⭐ | Potential for tokenized API access rights |
 
-### Next Steps for Demo Video
+### Differentiators vs Other Submissions
 
-1. Start API server: `npm start`
-2. Start MCP server: `npm run mcp`
-3. Test x402 payment flow with curl
-4. Demonstrate MCP tool calls
-5. Show smart contract on Casper Testnet
+1. **Not just a demo** — production Base version has real users
+2. **Complete payment loop** — discovery → payment → settlement → logging
+3. **MCP-native** — not REST-only; AI agents can use it directly
+4. **Dual-chain** — works on both Base/USDC and Casper/CSPR
+5. **On-chain transparency** — all API usage logged to smart contract
 
-### Funding Received
-- Casper Testnet CSPR: https://cspr.live/faucet
+### Funding & Resources
+- Casper Testnet CSPR from faucet
 - No external funding required
+- Sponsored x402 Facilitator usage (per hackathon rules)
 
 ---
 
-**Submitted by**: onchain-shadow  
-**Date**: June 2025  
-**Hackathon**: Casper Agentic Buildathon 2025
+**Submitted by**: onchain-shadow (qanzhi111)  
+**Date**: June 2026  
+**Hackathon**: Casper Agentic Buildathon — $150,000 Prize Pool
