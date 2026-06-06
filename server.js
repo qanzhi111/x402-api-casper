@@ -4,7 +4,7 @@
  * Cryptocrypto API with x402 payments on Casper Network
  * AI agents pay with CSPR/CEP-18 tokens via x402 protocol
  * 
- * Built for Casper Agentic Buildathon 2025
+ * Built for Casper Agentic Buildathon 2026
  */
 
 import express from 'express';
